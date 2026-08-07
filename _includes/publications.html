@@ -1,0 +1,8 @@
+<div class="section">
+  {% for pub in site.data.publications %}
+  <div class="grant-entry">
+    {{ pub.authors }}. <strong>{{ pub.title }}</strong>. {{ pub.venue }}
+    {% if pub.link != "" %} &mdash; <a href="{{ pub.link }}">link</a>{% endif %}
+  </div>
+  {% endfor %}
+</div>

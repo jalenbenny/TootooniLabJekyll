@@ -1,0 +1,39 @@
+title: Tootooni Lab
+description: Health Informatics & Data Science Lab \u2014 Loyola University Chicago
+url: "https://tootoonilab.github.io"
+baseurl: ""
+github_org: "TootooniLab"
+
+collections:
+  projects:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - TODO.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CNAME

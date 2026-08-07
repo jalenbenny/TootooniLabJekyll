@@ -1,0 +1,101 @@
+---
+---
+$black: #0B0C10;
+$navy: #16234A;
+$navy-2: #22346B;
+$white: #FFFFFF;
+$offwhite: #F5F5F6;
+$ink: #111214;
+$muted: #5A5D63;
+$line: #DCDDE0;
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: $ink;
+  background: $white;
+  line-height: 1.6;
+}
+
+a { color: $navy-2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+.site-header {
+  background: $black;
+  color: $white;
+  padding: 18px 0;
+  border-bottom: 3px solid $navy-2;
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+}
+.brand { font-weight: 700; font-size: 1.1rem; color: $white; }
+.brand span { color: #AEB6CC; font-weight: 400; }
+
+nav.main-nav a {
+  color: #D6D8DC; margin-left: 18px; font-size: .92rem; font-weight: 600;
+}
+nav.main-nav a:hover { color: $white; text-decoration: none; }
+nav.main-nav a.active { color: $white; border-bottom: 2px solid $navy-2; padding-bottom: 4px; }
+
+main { padding: 44px 0 80px; }
+
+h1.page-title { font-size: 2rem; margin: 0 0 6px; }
+p.page-sub { color: $muted; margin: 0 0 32px; font-size: 1.02rem; }
+
+.tag {
+  display: inline-block; background: $black; color: $white; font-size: .7rem; font-weight: 600;
+  padding: 3px 10px; border-radius: 999px; margin: 0 6px 6px 0;
+}
+.tag--muted { background: $offwhite; color: $navy-2; border: 1px solid $line; }
+
+.project-meta-line { color: $muted; font-size: .85rem; margin: 4px 0 18px; }
+
+.project-card {
+  border: 1px solid $line; border-radius: 10px; padding: 18px 20px; margin-bottom: 14px;
+}
+.project-card:hover { border-color: $navy-2; }
+.project-card__top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+.project-card__title { font-size: 1.08rem; font-weight: 700; margin: 0 0 4px; }
+.project-card__summary { color: $muted; margin: 6px 0 10px; font-size: .95rem; }
+.project-card__meta { font-family: Consolas, monospace; font-size: .78rem; color: $navy-2; }
+
+.status {
+  display: inline-block; font-size: .7rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; white-space: nowrap;
+}
+.status--active { background: #E4ECE8; color: #1C5A3C; }
+.status--completed { background: $offwhite; color: $muted; }
+
+.person-card { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid $line; }
+.person-card__avatar { width: 64px; height: 64px; border-radius: 50%; background: $offwhite; flex-shrink: 0; object-fit: cover; }
+.person-card__name { font-weight: 700; margin: 0; font-size: 1.05rem; }
+.person-card__role { color: $navy-2; font-size: .85rem; margin: 2px 0 8px; font-weight: 600; }
+.person-card p.bio { margin: 0; font-size: .93rem; color: $ink; }
+
+.section { margin-bottom: 26px; }
+.section h2 {
+  font-size: .95rem; text-transform: uppercase; letter-spacing: .04em; color: $navy-2; margin-bottom: 8px;
+}
+
+.filter-bar { margin-bottom: 22px; }
+.filter-bar a {
+  display: inline-block; border: 1px solid $line; border-radius: 999px; padding: 5px 13px; margin: 0 8px 8px 0;
+  font-size: .82rem; color: $ink; cursor: pointer;
+}
+.filter-bar a.active { background: $navy; border-color: $navy; color: $white; }
+
+.grant-entry, .course-entry { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid $line; font-size: .93rem; }
+.grant-entry:last-child, .course-entry:last-child { border-bottom: none; }
+.grant-year { font-weight: 700; color: $navy; }
+
+.site-footer { border-top: 1px solid $line; padding: 22px 0; color: $muted; font-size: .82rem; }
+
+.btn {
+  display: inline-block; background: $black; color: $white !important; padding: 8px 16px; border-radius: 6px;
+  font-size: .85rem; font-weight: 600;
+}
+.btn:hover { background: $navy; text-decoration: none; }

@@ -1,0 +1,10 @@
+# Add real entries here. Each becomes one line on /publications/.
+# This mirrors your existing site's {% include publications %} pattern.
+- authors: "[Author list]"
+  title: "[Placeholder \u2014 replace with a real publication title]"
+  venue: "[Journal / Conference, Year]"
+  link: ""
+- authors: "[Author list]"
+  title: "[Placeholder \u2014 replace with a real publication title]"
+  venue: "[Journal / Conference, Year]"
+  link: ""

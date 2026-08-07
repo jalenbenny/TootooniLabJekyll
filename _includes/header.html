@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="wrap">
+    <a href="{{ '/' | relative_url }}" class="brand">TOOTOONI LAB <span>&middot; Health Informatics &amp; Data Science</span></a>
+    <nav class="main-nav">
+      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+      <a href="{{ '/people/' | relative_url }}" class="{% if page.url == '/people/' %}active{% endif %}">People</a>
+      <a href="{{ '/research/' | relative_url }}" class="{% if page.url == '/research/' %}active{% endif %}">Research</a>
+      <a href="{{ '/publications/' | relative_url }}" class="{% if page.url == '/publications/' %}active{% endif %}">Publications</a>
+      <a href="{{ '/sponsors/' | relative_url }}" class="{% if page.url == '/sponsors/' %}active{% endif %}">Sponsors</a>
+      <a href="{{ '/teaching/' | relative_url }}" class="{% if page.url == '/teaching/' %}active{% endif %}">Teaching</a>
+      <a href="{{ '/contact/' | relative_url }}" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
+    </nav>
+  </div>
+</header>
