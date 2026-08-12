@@ -1,7 +1,7 @@
 title: Tootooni Lab
 description: Health Informatics & Data Science Lab \u2014 Loyola University Chicago
 url: "https://tootoonilab.github.io"
-baseurl: ""
+baseurl: "/TootooniLabJekyll"
 github_org: "TootooniLab"
 
 collections:
