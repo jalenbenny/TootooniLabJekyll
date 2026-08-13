@@ -9,7 +9,7 @@ permalink: /people/
   <img class="person-card__avatar" src="{{ '/images/samie.jpg' | relative_url }}" alt="Dr. Samie Tootooni">
   <div>
     <p class="person-card__name">Samie Tootooni</p>
-    <p class="person-card__role">Research Assistant 
+    <p class="person-card__role">Lab Leader 
     <p class="bio">I am an Assistant Professor in the Department of Health Informatics and Data Science with a secondary appointment in the Center for Health Outcomes and Informatics Research at Loyola University Chicago. I received my PhD in Industrial and Systems Engineering (ISE) from Binghamton University in 2016. Prior to joining Loyola, I was a Postdoctoral Research Associate in the Department of Health Sciences Research at Mayo Clinic in Rochester, Minnesota, for two years. My research lies in the intersection of decision science and artificial intelligence, which furthers knowledge of monitoring of and predictive analytics for complex healthcare systems. I am particularly interested in the role of data science and Artificial Intelligence tools such as Machine Learning and Natural Language Processing in development of clinical decision support models. Having an Industrial and Systems Engineering background, I am also interested to apply systems thinking, quality assurance, and optimization principles to improve health outcomes. Furthermore, I teach courses such as ontologies (knowledge representation) in health and Natural Language Processing.</p>
   </div>
 </div>
