@@ -15,6 +15,17 @@ permalink: /people/
 </div>
 
 <div class="person-card">
+  <img class="person-card__avatar" src="{{ '/images/samie.jpg' | relative_url }}" alt="Behnaz Eslami">
+  <div>
+    <p class="person-card__name">Behnaz Eslami</p>
+    <p class="person-card__role">Research Assistant &middot; June 2024 &ndash; Present</p>
+    <p class="bio">I'm a graduate-level data scientist with a strong track record in Large Language Model (LLM) evaluation, continual learning, and posttraining techniques. Currently pursuing my PhD in Computer Science at Loyola University Chicago, I focus on advancing healthcare through intelligent AI solutions. My research emphasizes LLM reasoning, supervised fine-tuning, and continual learning on longitudinal clinical data to develop adaptive healthcare AI systems.</p>
+  </div>
+</div>
+
+
+
+<div class="person-card">
   <img class="person-card__avatar" src="{{ '/images/ale.jpg' | relative_url }}" alt="Alessandra Vellucci">
   <div>
     <p class="person-card__name">Alessandra Vellucci</p>
