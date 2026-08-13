@@ -5,24 +5,21 @@ permalink: /research/
 <h1 class="page-title">Research</h1>
 <p class="page-sub">Active and past projects. Filter by tag &mdash; projects that span more than one area show up under each.</p>
 
-<div class="section" style="background:#F5F5F6; border-radius:10px; padding:22px 24px; margin-bottom:32px;">
-  <h2 style="margin-bottom:14px;">What is the research field of AI in Health Care Decision Making, in one sentence?</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px;">
-    <div>
-      <div style="width:100%; height:80px; border-radius:8px; background:#16234A; margin-bottom:10px;"></div>
-      <p style="font-size:.92rem; margin:0;">It's the use of machine learning and statistical models to help clinicians make faster, more accurate decisions from complex patient data.</p>
+<div class="explainer-box">
+  <h2>What is the research field of AI in Health Care Decision Making, in one sentence?</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:22px;">
+    <div style="border-left:3px solid #1B7A80; padding-left:14px;">
+      <p style="font-size:.93rem; margin:0;">It's the use of machine learning and statistical models to help clinicians make faster, more accurate decisions from complex patient data.</p>
     </div>
-    <div>
-      <div style="width:100%; height:80px; border-radius:8px; background:#22346B; margin-bottom:10px;"></div>
-      <p style="font-size:.92rem; margin:0;">It spans everything from triage and diagnosis to dosing and risk prediction, wherever a clinical decision needs to be made under time pressure or uncertainty.</p>
+    <div style="border-left:3px solid #14213D; padding-left:14px;">
+      <p style="font-size:.93rem; margin:0;">It spans everything from triage and diagnosis to dosing and risk prediction, wherever a clinical decision needs to be made under time pressure or uncertainty.</p>
     </div>
-    <div>
-      <div style="width:100%; height:80px; border-radius:8px; background:#0B0C10; margin-bottom:10px;"></div>
-      <p style="font-size:.92rem; margin:0;">Our lab's contribution is building and evaluating these tools specifically for stroke, sepsis, drug dosing, and EHR-based decision support.</p>
+    <div style="border-left:3px solid #9AA1A5; padding-left:14px;">
+      <p style="font-size:.93rem; margin:0;">Our lab's contribution is building and evaluating these tools specifically for stroke, sepsis, drug dosing, and EHR-based decision support.</p>
     </div>
   </div>
-  <p style="font-size:.8rem; color:#5A5D63; margin:16px 0 0;">
-    Placeholder / static version of this feature. A live version (a real question box that queries an AI model on demand) needs a small backend &mdash; calling an AI API directly from the browser on a public GitHub Pages site would expose the API key to anyone who views the page source. Happy to help wire up a serverless function for this if you want the live version.
+  <p class="note">
+    Static version of this feature. A live version (a real question box that queries an AI model on demand) needs a small backend &mdash; calling an AI API directly from the browser on a public GitHub Pages site would expose the API key to anyone who views the page source. Happy to help wire up a serverless function for this if you want the live version.
   </p>
 </div>
 

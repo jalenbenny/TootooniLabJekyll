@@ -1,101 +1,215 @@
 ---
 ---
-$black: #0B0C10;
-$navy: #16234A;
-$navy-2: #22346B;
-$white: #FFFFFF;
-$offwhite: #F5F5F6;
-$ink: #111214;
-$muted: #5A5D63;
-$line: #DCDDE0;
+// ============================================================
+// Tootooni Lab — design tokens
+// Palette grounded in clinical monitoring, not generic AI defaults.
+// ============================================================
+
+$ink:        #14213D;   // deep clinical navy — headers, primary text accents
+$ink-black:  #171B1F;   // body text
+$teal:       #1B7A80;   // "monitor teal" — the signature accent, referencing ECG/vital-sign displays
+$teal-deep:  #125458;
+$paper:      #FAFAF9;   // warm-cool paper background, not stark white or cliché cream
+$panel:      #F1F3F2;   // slightly deeper panel background
+$line:       #E1E4E3;
+$muted:      #5B6368;
+$muted-2:    #868D91;
+$active-green: #1F8A5F;
+$archived-gray: #9AA1A5;
+
+$font-display: "Source Serif 4", Georgia, serif;
+$font-body: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+$radius: 10px;
+$radius-sm: 6px;
 
 * { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
-  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: $ink;
-  background: $white;
-  line-height: 1.6;
+  font-family: $font-body;
+  color: $ink-black;
+  background: $paper;
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
-a { color: $navy-2; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: $teal-deep; text-decoration: none; }
+a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+*:focus-visible {
+  outline: 2px solid $teal;
+  outline-offset: 2px;
+}
+
+h1, h2, h3 { font-family: $font-display; color: $ink; margin: 0; }
 
 .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
 
+// ---------------- Header / Nav ----------------
 .site-header {
-  background: $black;
-  color: $white;
-  padding: 18px 0;
-  border-bottom: 3px solid $navy-2;
+  background: $ink;
+  color: $paper;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 4px 16px rgba(20,33,61,0.12);
 }
 .site-header .wrap {
-  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px 24px;
 }
-.brand { font-weight: 700; font-size: 1.1rem; color: $white; }
-.brand span { color: #AEB6CC; font-weight: 400; }
+.brand {
+  font-family: $font-display;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
+  color: $paper;
+}
+.brand span { color: #93A3C4; font-weight: 400; font-family: $font-body; font-size: 0.85rem; }
 
+nav.main-nav { display: flex; flex-wrap: wrap; gap: 2px; }
 nav.main-nav a {
-  color: #D6D8DC; margin-left: 18px; font-size: .92rem; font-weight: 600;
+  color: #C7D0E0;
+  padding: 6px 12px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
 }
-nav.main-nav a:hover { color: $white; text-decoration: none; }
-nav.main-nav a.active { color: $white; border-bottom: 2px solid $navy-2; padding-bottom: 4px; }
+nav.main-nav a:hover { color: $paper; text-decoration: none; background: rgba(255,255,255,0.08); }
+nav.main-nav a.active { color: $ink; background: $teal; font-weight: 600; }
+nav.main-nav a.active:hover { background: $teal; }
 
-main { padding: 44px 0 80px; }
+main { padding: 52px 0 90px; }
 
-h1.page-title { font-size: 2rem; margin: 0 0 6px; }
-p.page-sub { color: $muted; margin: 0 0 32px; font-size: 1.02rem; }
+// ---------------- Page heading ----------------
+h1.page-title { font-size: 2.15rem; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.01em; }
+p.page-sub { color: $muted; margin: 0 0 12px; font-size: 1.05rem; max-width: 640px; }
 
+// ---------------- Signature waveform divider ----------------
+.waveform-divider {
+  width: 100%; height: 28px; margin: 28px 0 36px;
+  background-repeat: repeat-x; background-size: 140px 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='28' viewBox='0 0 140 28'%3E%3Cpath d='M0 14 H40 L48 14 L54 4 L60 24 L66 14 L74 14 H140' fill='none' stroke='%231B7A80' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  opacity: 0.55;
+}
+
+// ---------------- Hero (home page) ----------------
+.hero {
+  padding: 8px 0 6px;
+}
+.hero-eyebrow {
+  font-family: $font-mono; font-size: 0.78rem; color: $teal-deep; letter-spacing: 0.04em;
+  text-transform: uppercase; margin: 0 0 10px;
+}
+.hero p.lede {
+  font-size: 1.12rem; color: $ink-black; max-width: 620px; margin: 14px 0 0;
+}
+
+// ---------------- Section ----------------
+.section { margin-bottom: 30px; }
+.section h2 {
+  font-family: $font-mono; font-size: 0.82rem; font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.06em; color: $teal-deep; margin-bottom: 12px;
+}
+
+// ---------------- Tags & status ----------------
 .tag {
-  display: inline-block; background: $black; color: $white; font-size: .7rem; font-weight: 600;
-  padding: 3px 10px; border-radius: 999px; margin: 0 6px 6px 0;
+  display: inline-block; background: $ink; color: $paper; font-family: $font-mono; font-size: 0.7rem;
+  padding: 3px 10px; border-radius: 999px; margin: 0 6px 6px 0; letter-spacing: 0.01em;
 }
-.tag--muted { background: $offwhite; color: $navy-2; border: 1px solid $line; }
-
-.project-meta-line { color: $muted; font-size: .85rem; margin: 4px 0 18px; }
-
-.project-card {
-  border: 1px solid $line; border-radius: 10px; padding: 18px 20px; margin-bottom: 14px;
-}
-.project-card:hover { border-color: $navy-2; }
-.project-card__top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
-.project-card__title { font-size: 1.08rem; font-weight: 700; margin: 0 0 4px; }
-.project-card__summary { color: $muted; margin: 6px 0 10px; font-size: .95rem; }
-.project-card__meta { font-family: Consolas, monospace; font-size: .78rem; color: $navy-2; }
+.tag--muted { background: $panel; color: $teal-deep; border: 1px solid $line; }
 
 .status {
-  display: inline-block; font-size: .7rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; white-space: nowrap;
+  display: inline-block; font-family: $font-mono; font-size: 0.68rem; font-weight: 500;
+  padding: 4px 11px; border-radius: 999px; white-space: nowrap; letter-spacing: 0.02em;
 }
-.status--active { background: #E4ECE8; color: #1C5A3C; }
-.status--completed { background: $offwhite; color: $muted; }
+.status--active { background: rgba(31,138,95,0.12); color: $active-green; }
+.status--completed { background: $panel; color: $muted; }
+.status--archived { background: $panel; color: $archived-gray; }
 
-.person-card { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid $line; }
-.person-card__avatar { width: 64px; height: 64px; border-radius: 50%; background: $offwhite; flex-shrink: 0; object-fit: cover; }
-.person-card__name { font-weight: 700; margin: 0; font-size: 1.05rem; }
-.person-card__role { color: $navy-2; font-size: .85rem; margin: 2px 0 8px; font-weight: 600; }
-.person-card p.bio { margin: 0; font-size: .93rem; color: $ink; }
-
-.section { margin-bottom: 26px; }
-.section h2 {
-  font-size: .95rem; text-transform: uppercase; letter-spacing: .04em; color: $navy-2; margin-bottom: 8px;
+// ---------------- Project cards ----------------
+.project-card {
+  border: 1px solid $line; border-left: 4px solid $line; border-radius: $radius;
+  padding: 20px 22px; margin-bottom: 14px; background: #fff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
+.project-card:hover {
+  border-color: $teal; box-shadow: 0 6px 20px rgba(20,33,61,0.08); transform: translateY(-1px);
+}
+.project-card:has(.status--active) { border-left-color: $active-green; }
+.project-card:has(.status--completed) { border-left-color: $muted-2; }
+.project-card:has(.status--archived) { border-left-color: $archived-gray; }
 
-.filter-bar { margin-bottom: 22px; }
+.project-card__top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.project-card__title { font-family: $font-display; font-size: 1.12rem; font-weight: 600; margin: 0 0 4px; color: $ink; }
+.project-card__title a { color: inherit; }
+.project-card__summary { color: $ink-black; margin: 8px 0 12px; font-size: 0.95rem; }
+.project-card__meta { font-family: $font-mono; font-size: 0.76rem; color: $teal-deep; }
+
+.project-meta-line { font-family: $font-mono; color: $muted; font-size: 0.82rem; margin: 6px 0 20px; }
+
+// ---------------- Project detail page ----------------
+.project-detail__header { border-bottom: 1px solid $line; padding-bottom: 20px; margin-bottom: 8px; }
+
+// ---------------- People ----------------
+.person-card { display: flex; gap: 18px; padding: 20px 0; border-bottom: 1px solid $line; }
+.person-card__avatar {
+  width: 68px; height: 68px; border-radius: 50%; background: $panel; flex-shrink: 0;
+  object-fit: cover; border: 2px solid #fff; box-shadow: 0 0 0 1px $line;
+}
+.person-card__name { font-family: $font-display; font-weight: 600; margin: 0; font-size: 1.08rem; color: $ink; }
+.person-card__role { color: $teal-deep; font-size: 0.85rem; margin: 2px 0 8px; font-weight: 500; font-family: $font-mono; }
+.person-card p.bio { margin: 0; font-size: 0.94rem; }
+
+// ---------------- Filter bar ----------------
+.filter-bar { margin-bottom: 26px; display: flex; flex-wrap: wrap; gap: 8px; }
 .filter-bar a {
-  display: inline-block; border: 1px solid $line; border-radius: 999px; padding: 5px 13px; margin: 0 8px 8px 0;
-  font-size: .82rem; color: $ink; cursor: pointer;
+  display: inline-block; border: 1px solid $line; border-radius: 999px; padding: 6px 14px;
+  font-family: $font-mono; font-size: 0.8rem; color: $ink-black; cursor: pointer; background: #fff;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
-.filter-bar a.active { background: $navy; border-color: $navy; color: $white; }
+.filter-bar a:hover { border-color: $teal; text-decoration: none; }
+.filter-bar a.active { background: $ink; border-color: $ink; color: $paper; }
 
-.grant-entry, .course-entry { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid $line; font-size: .93rem; }
-.grant-entry:last-child, .course-entry:last-child { border-bottom: none; }
-.grant-year { font-weight: 700; color: $navy; }
+// ---------------- Grants / publications ----------------
+.grant-entry, .course-entry {
+  margin-bottom: 16px; padding: 16px 0 16px 18px; border-left: 3px solid $line; font-size: 0.94rem;
+}
+.grant-entry:hover { border-left-color: $teal; }
+.grant-year { font-family: $font-mono; font-weight: 500; color: $ink; background: $panel; padding: 2px 8px; border-radius: 4px; font-size: 0.82rem; }
 
-.site-footer { border-top: 1px solid $line; padding: 22px 0; color: $muted; font-size: .82rem; }
-
+// ---------------- Buttons ----------------
 .btn {
-  display: inline-block; background: $black; color: $white !important; padding: 8px 16px; border-radius: 6px;
-  font-size: .85rem; font-weight: 600;
+  display: inline-block; background: $ink; color: $paper !important; padding: 10px 18px; border-radius: $radius-sm;
+  font-size: 0.88rem; font-weight: 600; transition: background 0.15s ease;
 }
-.btn:hover { background: $navy; text-decoration: none; }
+.btn:hover { background: $teal-deep; text-decoration: none; }
+
+// ---------------- Footer ----------------
+.site-footer {
+  border-top: 1px solid $line; padding: 28px 0 36px; color: $muted; font-size: 0.82rem; margin-top: 20px;
+}
+.site-footer a { color: $teal-deep; }
+
+// ---------------- Misc components used inline on pages ----------------
+.explainer-box {
+  background: $panel; border-radius: $radius; padding: 24px 26px; margin-bottom: 34px; border: 1px solid $line;
+}
+.explainer-box h2 { font-family: $font-display; font-size: 1.2rem; color: $ink; text-transform: none; letter-spacing: 0; margin-bottom: 16px; }
+.explainer-box .note { font-family: $font-mono; font-size: 0.76rem; color: $muted-2; margin: 16px 0 0; line-height: 1.55; }
+
+.map-frame { border-radius: $radius; overflow: hidden; border: 1px solid $line; }
+
+// ---------------- Responsive ----------------
+@media (max-width: 640px) {
+  .site-header .wrap { flex-direction: column; align-items: flex-start; }
+  nav.main-nav { gap: 0; margin-left: -12px; }
+  h1.page-title { font-size: 1.7rem; }
+  .project-card__top { flex-direction: column; }
+}

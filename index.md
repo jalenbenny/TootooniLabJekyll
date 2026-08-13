@@ -1,10 +1,13 @@
 ---
 title: Home
 ---
-<h1 class="page-title">Tootooni Lab</h1>
-<p class="page-sub">Health Informatics &amp; Data Science &middot; Loyola University Chicago</p>
+<div class="hero">
+  <p class="hero-eyebrow">Loyola University Chicago &middot; Health Informatics &amp; Data Science</p>
+  <h1 class="page-title">Tootooni Lab</h1>
+  <p class="lede">We work at the intersection of artificial intelligence, clinical data, and patient care &mdash; spanning stroke triage, drug dosing, clinical NLP, and AI evaluation in healthcare settings.</p>
+</div>
 
-<p>We work at the intersection of artificial intelligence, clinical data, and patient care &mdash; spanning stroke triage, drug dosing, clinical NLP, and AI evaluation in healthcare settings.</p>
+<div class="waveform-divider"></div>
 
 <div class="section">
   <h2>Meet the Team</h2>
@@ -20,7 +23,7 @@ title: Home
     {% assign this_label = project.date | date: "%B %Y" %}
     {% if this_label != current_label %}
       {% unless forloop.first %}</ul>{% endunless %}
-      <h3 style="font-size:.95rem; color:#5A5D63; margin:20px 0 6px;">{{ this_label }}</h3>
+      <h3 style="font-family:'IBM Plex Mono',monospace; font-size:.8rem; text-transform:uppercase; letter-spacing:.05em; color:#1B7A80; margin:22px 0 8px; font-weight:500;">{{ this_label }}</h3>
       <ul style="margin-top:0;">
       {% assign current_label = this_label %}
     {% endif %}
