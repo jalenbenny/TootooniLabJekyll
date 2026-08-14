@@ -9,8 +9,8 @@ permalink: /people/
   <img class="person-card__avatar" src="{{ '/images/samie.jpg' | relative_url }}" alt="Dr. Samie Tootooni">
   <div>
     <p class="person-card__name">Samie Tootooni</p>
-    <p class="person-card__role">Lab Leader 
-    <p class="bio">I am an Assistant Professor in the Department of Health Informatics and Data Science with a secondary appointment in the Center for Health Outcomes and Informatics Research at Loyola University Chicago. I received my PhD in Industrial and Systems Engineering (ISE) from Binghamton University in 2016. Prior to joining Loyola, I was a Postdoctoral Research Associate in the Department of Health Sciences Research at Mayo Clinic in Rochester, Minnesota, for two years. My research lies in the intersection of decision science and artificial intelligence, which furthers knowledge of monitoring of and predictive analytics for complex healthcare systems. I am particularly interested in the role of data science and Artificial Intelligence tools such as Machine Learning and Natural Language Processing in development of clinical decision support models. Having an Industrial and Systems Engineering background, I am also interested to apply systems thinking, quality assurance, and optimization principles to improve health outcomes. Furthermore, I teach courses such as ontologies (knowledge representation) in health and Natural Language Processing.</p>
+    <p class="person-card__role">Lab Leader</p>
+    <p class="bio">Samie Tootooni is an Assistant Professor in the Department of Health Informatics and Data Science, with a secondary appointment in the Center for Health Outcomes and Informatics Research at Loyola University Chicago. He received his PhD in Industrial and Systems Engineering (ISE) from Binghamton University in 2016, and prior to joining Loyola was a Postdoctoral Research Associate in the Department of Health Sciences Research at Mayo Clinic in Rochester, Minnesota, for two years. His research lies at the intersection of decision science and artificial intelligence, advancing monitoring and predictive analytics for complex healthcare systems, with particular interest in how data science and AI tools such as machine learning and natural language processing support clinical decision support models. Drawing on his Industrial and Systems Engineering background, he also applies systems thinking, quality assurance, and optimization principles to improve health outcomes, and teaches courses on ontologies (knowledge representation) in health and natural language processing.</p>
   </div>
 </div>
 
@@ -18,12 +18,10 @@ permalink: /people/
   <img class="person-card__avatar" src="{{ '/images/behnaz.jpg' | relative_url }}" alt="Behnaz Eslami">
   <div>
     <p class="person-card__name">Behnaz Eslami</p>
-    <p class="person-card__role">Research Assistant 
-    <p class="bio">I'm a graduate-level data scientist with a strong track record in Large Language Model (LLM) evaluation, continual learning, and posttraining techniques. Currently pursuing my PhD in Computer Science at Loyola University Chicago, I focus on advancing healthcare through intelligent AI solutions. My research emphasizes LLM reasoning, supervised fine-tuning, and continual learning on longitudinal clinical data to develop adaptive healthcare AI systems.</p>
+    <p class="person-card__role">Research Assistant</p>
+    <p class="bio">Behnaz Eslami is a graduate-level data scientist with a strong track record in large language model (LLM) evaluation, continual learning, and post-training techniques. She is currently pursuing her PhD in Computer Science at Loyola University Chicago, focusing on advancing healthcare through intelligent AI solutions. Her research emphasizes LLM reasoning, supervised fine-tuning, and continual learning on longitudinal clinical data to develop adaptive healthcare AI systems.</p>
   </div>
 </div>
-
-
 
 <div class="person-card">
   <img class="person-card__avatar" src="{{ '/images/ale.jpg' | relative_url }}" alt="Alessandra Vellucci">
@@ -39,7 +37,7 @@ permalink: /people/
   <div>
     <p class="person-card__name">Maryum Ahmed</p>
     <p class="person-card__role">Data Science Master's Student</p>
-    <p class="bio">I am a Data Science master's student with a background in Bioinformatics in Dr. Tootooni's research group. I am particularly interested in healthcare applications of data science. Currently, I am contributing to projects involving topic modeling and the analysis of stroke triage and mis-triage in clinical settings.</p>
+    <p class="bio">Maryum Ahmed is a Data Science master's student with a background in Bioinformatics in Dr. Tootooni's research group. She is particularly interested in healthcare applications of data science, and is currently contributing to projects involving topic modeling and the analysis of stroke triage and mis-triage in clinical settings.</p>
   </div>
 </div>
 
@@ -48,7 +46,7 @@ permalink: /people/
   <div>
     <p class="person-card__name">Ubeyd Dincer</p>
     <p class="person-card__role">Research Assistant, Parkinson School of Health Sciences and Public Health</p>
-    <p class="bio">I am a Research Assistant in the Parkinson School of Health Sciences and Public Health, and recently completed my M.S. in Business Data Analytics at Loyola University Chicago. My primary research focuses on healthcare analytics, health economics, and AI driven decision support systems. I currently lead a stroke triage project investigating the clinical and economic burden of patient mis-triage using nationwide emergency department data (HCUP). My broader interests include healthcare operations, predictive modeling, and the use of data science to improve patient outcomes.</p>
+    <p class="bio">Ubeyd Dincer is a Research Assistant in the Parkinson School of Health Sciences and Public Health, and recently completed his M.S. in Business Data Analytics at Loyola University Chicago. His primary research focuses on healthcare analytics, health economics, and AI-driven decision support systems. He currently leads a stroke triage project investigating the clinical and economic burden of patient mis-triage using nationwide emergency department data (HCUP). His broader interests include healthcare operations, predictive modeling, and the use of data science to improve patient outcomes.</p>
   </div>
 </div>
 
@@ -57,7 +55,7 @@ permalink: /people/
   <div>
     <p class="person-card__name">Pharel Adjeyi</p>
     <p class="person-card__role">BSN Student, Loyola Lakeshore Campus</p>
-    <p class="bio">Hi everyone! I'm Pharel Adjeyi, a rising third-year Bachelor of Science in Nursing student at Loyola University Chicago's Lakeshore Campus. This summer, I'm currently conducting a research project evaluating the use of artificial intelligence visualization tools in healthcare research. My work focuses on assessing various AI platforms based on their ability to generate accurate, clear, and effective visualizations for academic and clinical research settings. Through this project, I aim to explore the strengths, limitations, usability, and potential risks associated with using AI-generated visual content in healthcare research, while identifying best practices for their responsible implementation.</p>
+    <p class="bio">Pharel Adjeyi is a rising third-year Bachelor of Science in Nursing student at Loyola University Chicago's Lakeshore Campus. This summer, he is conducting a research project evaluating the use of artificial intelligence visualization tools in healthcare research, assessing various AI platforms on their ability to generate accurate, clear, and effective visualizations for academic and clinical research settings. Through this project, he aims to explore the strengths, limitations, usability, and potential risks of AI-generated visual content in healthcare research, while identifying best practices for responsible implementation.</p>
   </div>
 </div>
 
@@ -66,7 +64,7 @@ permalink: /people/
   <div>
     <p class="person-card__name">Adnan Hussain</p>
     <p class="person-card__role">Graduate Research Assistant &middot; Loyola Stritch School of Medicine, Class of 2027</p>
-    <p class="bio">I'm a medical student at Loyola Stritch (Class of 2027). My research examines how AI/ML tools translate into real clinical impact at the system, provider, and patient level. I serve as first author on a study of paramedic perceptions of an ML-based stroke triage tool, and as a co-investigator on a retrospective study quantifying the financial burden of stroke mistriage at non-specialized hospitals.</p>
+    <p class="bio">Adnan Hussain is a medical student at Loyola Stritch (Class of 2027). His research examines how AI/ML tools translate into real clinical impact at the system, provider, and patient level. He serves as first author on a study of paramedic perceptions of an ML-based stroke triage tool, and as a co-investigator on a retrospective study quantifying the financial burden of stroke mistriage at non-specialized hospitals.</p>
   </div>
 </div>
 
@@ -75,7 +73,7 @@ permalink: /people/
   <div>
     <p class="person-card__name">Michael Saban</p>
     <p class="person-card__role">Graduate Research Assistant</p>
-    <p class="bio">Works on multimodal machine learning for clinical outcomes, including an end-to-end fusion pipeline on MIMIC-IV predicting 30-day post-discharge mortality. Also developed a hybrid retrieval + LLM verification system for schema-guided clinical information extraction, and builds ML models on EMS data for prehospital stroke triage.</p>
+    <p class="bio">Michael Saban is a Graduate Research Assistant who works on multimodal machine learning for clinical outcomes, including an end-to-end fusion pipeline on MIMIC-IV predicting 30-day post-discharge mortality. He also developed a hybrid retrieval and LLM verification system for schema-guided clinical information extraction, and builds ML models on EMS data for prehospital stroke triage.</p>
   </div>
 </div>
 
@@ -84,6 +82,6 @@ permalink: /people/
   <div>
     <p class="person-card__name">Dhruvin Patel</p>
     <p class="person-card__role">Research Assistant &middot; June 2024 &ndash; Present</p>
-    <p class="bio">Works across predictive modeling and clinical data pipelines: Transformer-based forecasting of Influenza-Like Illness, a computer vision pipeline for Parkinson's biomarkers, Bayesian vancomycin dosing optimization, a multi-institutional dosing data pipeline, AKI staging, and knowledge-graph-enhanced LLM reasoning.</p>
+    <p class="bio">Dhruvin Patel is a Research Assistant who works across predictive modeling and clinical data pipelines: Transformer-based forecasting of Influenza-Like Illness, a computer vision pipeline for Parkinson's biomarkers, Bayesian vancomycin dosing optimization, a multi-institutional dosing data pipeline, AKI staging, and knowledge-graph-enhanced LLM reasoning.</p>
   </div>
 </div>
