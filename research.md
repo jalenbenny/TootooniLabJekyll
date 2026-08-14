@@ -3,7 +3,7 @@ title: Research
 permalink: /research/
 ---
 <h1 class="page-title">Research</h1>
-<p class="page-sub">Active and past projects. Filter by tag &mdash; projects that span more than one area show up under each.</p>
+<p class="page-sub">Active and past projects. Filter by tag, projects that span more than one area show up under each.</p>
 
 <div class="explainer-box">
   <h2>What is the research field of AI in Health Care Decision Making, in one sentence?</h2>
