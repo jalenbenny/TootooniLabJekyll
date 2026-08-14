@@ -4,7 +4,7 @@ title: Home
 <div class="hero">
   <p class="hero-eyebrow">Loyola University Chicago &middot; Health Informatics &amp; Data Science</p>
   <h1 class="page-title">Tootooni Lab</h1>
-  <p class="lede">Working at the intersection of artificial intelligence, clinical data, and patient care, spanning stroke triage, drug dosing, clinical NLP, and AI evaluation in healthcare settings.</p>
+  <p class="lede">The lab works at the intersection of artificial intelligence, clinical data, and patient care, spanning stroke triage, drug dosing, clinical NLP, and AI evaluation in healthcare settings.</p>
 </div>
 <div class="waveform-divider"></div>
 <div class="section">
