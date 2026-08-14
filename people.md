@@ -85,3 +85,14 @@ permalink: /people/
     <p class="bio">Dhruvin Patel is a Research Assistant who works across predictive modeling and clinical data pipelines: Transformer-based forecasting of Influenza-Like Illness, a computer vision pipeline for Parkinson's biomarkers, Bayesian vancomycin dosing optimization, a multi-institutional dosing data pipeline, AKI staging, and knowledge-graph-enhanced LLM reasoning.</p>
   </div>
 </div>
+
+<div class="person-card">
+  <img class="person-card__avatar" src="{{ '/images/rahil.jpg' | relative_url }}" alt="Rahil Sadruddin">
+  <div>
+    <p class="person-card__name">Rahil Sadruddin</p>
+    <p class="person-card__role">Research Assistant</p>
+    <p class="bio">Rahil Sadruddin is a Doctor of Medicine candidate at Loyola University Chicago Stritch School of Medicine, anticipated to graduate in May 2029. He works with Dr. Tootooni on clinical decision support tools analyzing drug-drug interactions and nephrotoxicity risk in ICU patients. His broader research spans orthopedic outcomes with Loyola Orthopaedic Surgery and Rehabilitation, anesthesia and joint replacement outcomes with Dr. Nicholas Brown, and earlier work at the University of Illinois Urbana-Champaign studying EMG and ultrasound-based predictors of muscle strain in wheelchair users and the cognitive effects of exercise in older adults
+</p>
+  </div>
+</div>
+
