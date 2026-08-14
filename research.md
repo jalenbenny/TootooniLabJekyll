@@ -19,7 +19,7 @@ permalink: /research/
     </div>
   </div>
   <p class="note">
-    Static version of this feature. A live version (a real question box that queries an AI model on demand) needs a small backend &mdash; calling an AI API directly from the browser on a public GitHub Pages site would expose the API key to anyone who views the page source. Happy to help wire up a serverless function for this if you want the live version.
+    Static version of question box feature
   </p>
 </div>
 
