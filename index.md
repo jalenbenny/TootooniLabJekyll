@@ -4,17 +4,14 @@ title: Home
 <div class="hero">
   <p class="hero-eyebrow">Loyola University Chicago &middot; Health Informatics &amp; Data Science</p>
   <h1 class="page-title">Tootooni Lab</h1>
-  <p class="lede">We work at the intersection of artificial intelligence, clinical data, and patient care &mdash; spanning stroke triage, drug dosing, clinical NLP, and AI evaluation in healthcare settings.</p>
+  <p class="lede">Working at the intersection of artificial intelligence, clinical data, and patient care, spanning stroke triage, drug dosing, clinical NLP, and AI evaluation in healthcare settings.</p>
 </div>
-
 <div class="waveform-divider"></div>
-
 <div class="section">
   <h2>Meet the Team</h2>
   <p>Our lab brings together graduate research assistants, medical students, and undergraduates working across AI, NLP, and clinical informatics.</p>
   <p><a href="{{ '/people/' | relative_url }}">See the full team &rarr;</a></p>
 </div>
-
 <div class="section">
   <h2>All Projects, by Month</h2>
   {% assign sorted_projects = site.projects | sort: "date" | reverse %}
